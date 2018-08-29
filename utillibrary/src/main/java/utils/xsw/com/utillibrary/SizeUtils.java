@@ -8,9 +8,6 @@ import android.view.View;
 
 /**
  * <pre>
- *     author: Blankj
- *     blog  : http://blankj.com
- *     time  : 2016/8/2
  *     desc  : 尺寸相关工具类
  * </pre>
  */

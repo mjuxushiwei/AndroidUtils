@@ -2,9 +2,6 @@ package utils.xsw.com.utillibrary;
 
 /**
  * <pre>
- *     author: Blankj
- *     blog  : http://blankj.com
- *     time  : 2016/8/16
  *     desc  : 字符串相关工具类
  * </pre>
  */

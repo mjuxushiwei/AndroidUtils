@@ -5,8 +5,7 @@ import android.util.Log;
 /**
  * Log统一管理类
  * 
- * @author way
- * 
+ *
  */
 public class LogUtils
 {

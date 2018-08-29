@@ -8,9 +8,6 @@ import java.util.Locale;
 
 /**
  * <pre>
- *     author: Blankj
- *     blog  : http://blankj.com
- *     time  : 2016/8/2
  *     desc  : 时间相关工具类
  * </pre>
  */

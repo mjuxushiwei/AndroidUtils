@@ -17,9 +17,6 @@ import static utils.xsw.com.utillibrary.ConvertUtils.*;
 
 /**
  * <pre>
- *     author: Blankj
- *     blog  : http://blankj.com
- *     time  : 2016/8/2
      *     desc  : 加密解密相关的工具类
  * </pre>
  */

@@ -7,9 +7,6 @@ import java.io.File;
 
 /**
  * <pre>
- *     author: Blankj
- *     blog  : http://blankj.com
- *     time  : 2016/8/11
  *     desc  : SD卡相关工具类
  * </pre>
  */
