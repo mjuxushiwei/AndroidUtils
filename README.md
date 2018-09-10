@@ -21,4 +21,7 @@ ShellUtilsShell相关工具类
 SizeUtils尺寸相关工具类
 StringUtils字符串相关工具类
 TimeUtils时间相关工具类
+/n
+hao to  use  this lirbary
 
+compile 'utils.xsw.com.utillibrary:utillibrary:1.0.1'
