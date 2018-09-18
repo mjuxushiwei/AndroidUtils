@@ -10,7 +10,7 @@ import android.view.WindowManager;
 import android.widget.TextView;
 
 
-public class Toast {
+public class wToast {
     public static final int LENGTH_LONG = 3500;  
     public static final int LENGTH_SHORT = 2000;  
     private WindowManager mWindowManager;

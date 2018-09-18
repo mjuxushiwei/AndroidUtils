@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.os.Build;
 import android.util.DisplayMetrics;
@@ -230,5 +231,23 @@ public class ScreenUtils {
         KeyguardManager km = (KeyguardManager) context
                 .getSystemService(Context.KEYGUARD_SERVICE);
         return km.inKeyguardRestrictedInputMode();
+    }
+    /**
+     * 获取屏幕方向
+     *
+     * @param content
+     * @return portrait   1    landscape  2   other -1
+     */
+    public static int GetScreenOrintation(Activity content) {
+
+        if (content.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+//            Log.i("info", "landscape");
+            return Configuration.ORIENTATION_LANDSCAPE;
+        } else if (content.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+//            Log.i("info", "portrait");
+            return Configuration.ORIENTATION_PORTRAIT;
+
+        }
+        return -1;
     }
 }

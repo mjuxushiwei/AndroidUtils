@@ -32,7 +32,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     provided 'com.google.code.gson:gson:2.2.4'
 }
-version = "1.0.1"    //这个是版本号，必须填写
+version = "1.0.2"    //这个是版本号，必须填写
 def siteUrl = 'https://github.com/mjuxushiwei/AndroidUtils' // 项目的主页
 def gitUrl = 'https://github.com/mjuxushiwei/AndroidUtils' // Git仓库的
 group = "utils.xsw.com.utillibrary" // 这里是groupId ,必须填写  一般填你唯一的包名
@@ -101,26 +101,25 @@ artifacts {}
 //    archives javadocJar    archives sourcesJar
 // 生成jar包task
 
-
 // 这里是读取Bintray相关的信息，我们上传项目到github上的时候会把gradle文件传上去，
 // 所以不要把帐号密码的信息直接写在这里，写在local.properties中，这里动态读取。
- Properties properties = new Properties()
-    properties.load(project.rootProject.file('local.properties').newDataInputStream())
-    bintray {
-        //读取 local.properties 文件里面的 bintray.user
-        user = properties.getProperty("bintray.user")
-        //读取 local.properties 文件里面的 bintray.apikey
-        key = properties.getProperty("bintray.apikey")
-        configurations = ['archives']
-        pkg {
-            userOrg = "xushiwei"        //发布到JCenter的组织，注意新版本的bintray是需要手动创建的
-            repo = "Person"
-            //发布到JCenter上的仓库名称，注意新版本的bintray是需要手动创建的        // 发布到Bintray上的项目名字
-            name = "AndroidUtils"
-            websiteUrl = siteUrl
-            vcsUrl = gitUrl
-            licenses = ["Apache-2.0"]
-            publish = true  // 是否是公开项目      }
-        }
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+bintray {
+    //读取 local.properties 文件里面的 bintray.user
+    user = properties.getProperty("bintray.user")
+    //读取 local.properties 文件里面的 bintray.apikey
+    key = properties.getProperty("bintray.apikey")
+    configurations = ['archives']
+    pkg {
+        userOrg = "xushiwei"        //发布到JCenter的组织，注意新版本的bintray是需要手动创建的
+        repo = "Person"
+        //发布到JCenter上的仓库名称，注意新版本的bintray是需要手动创建的        // 发布到Bintray上的项目名字
+        name = "AndroidUtils"
+        websiteUrl = siteUrl
+        vcsUrl = gitUrl
+        licenses = ["Apache-2.0"]
+        publish = true  // 是否是公开项目      }
     }
+}
 
